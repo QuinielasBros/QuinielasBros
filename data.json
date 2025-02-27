@@ -3,24 +3,28 @@
         {
             "banco": "BBVA BANCOMER",
             "numero": "4152 3139 1511 3661",
-            "titular": "Leonardo Daniel Carabez Carbajal"
+            "titular": "Leonardo Daniel Carabez Carbajal",
+            "imagen": "img/bbva.png"
         },
         {
-            "banco": "BANCOOPEL",
+            "banco": "BANCOPPEL",
             "numero": "4169 1608 2418 9204",
-            "titular": "Leonardo Daniel Carabez Carbajal"
+            "titular": "Leonardo Daniel Carabez Carbajal",
+            "imagen": "img/coppel.png"
         },
         {
             "banco": "HSBC",
             "numero": "4309 6740 0108 2298",
-            "titular": "Leonardo Daniel Carabez Carbajal"
+            "titular": "Leonardo Daniel Carabez Carbajal",
+            "imagen": "img/hsbc.png"
         }
     ],
     "oxxo": [
         {
             "banco": "SPIN BY OXXO",
             "numero": "4217 4700 1469 6955",
-            "titular": "Leonardo Daniel Carabez Carbajal"
+            "titular": "Leonardo Daniel Carabez Carbajal",
+            "imagen": "img/oxxo.png"
         }
     ]
 }
