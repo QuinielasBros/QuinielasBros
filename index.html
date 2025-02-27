@@ -3,41 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        .data-container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-        .data-item {
-            margin-bottom: 10px;
-        }
-        .data-item label {
-            font-weight: bold;
-        }
-    </style>
+    <title>Métodos de Pago</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="data-container">
-        <h1>Datos</h1>
-        <div class="data-item">
-            <label>Método:</label> <span>Método 1</span>
-        </div>
-        <div class="data-item">
-            <label>Descripción:</label> <span>Descripción del método 1</span>
-        </div>
-        <div class="data-item">
-            <label>Fecha:</label> <span>2023-10-01</span>
-        </div>
-        <!-- Agrega más datos según sea necesario -->
+
+    <div class="container">
+        <h2>Métodos de Pago</h2>
+
+        <h3>Transferencia</h3>
+        <div id="transferencias"></div>
+
+        <h3>Depósitos en OXXO</h3>
+        <div id="oxxo"></div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
