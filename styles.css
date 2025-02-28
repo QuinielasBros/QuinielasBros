@@ -56,27 +56,27 @@ h2 {
 .contenido-scroll {
     flex: 1;
     overflow-y: auto;
-    padding: 5px 0;
+    padding: 10px 0; /* Aumenté el padding vertical */
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px; /* Aumenté el espacio entre las cards */
 }
 
 .card {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 6px;
+    padding: 10px; /* Aumenté el padding para más espacio interno */
     border-radius: 8px;
     width: 100%;
     box-sizing: border-box;
     font-size: 0.75rem; /* Usando unidades relativas */
-    gap: 5px;
+    gap: 10px; /* Aumenté el espacio entre los elementos de la card */
 }
 
 .card img {
-    width: 30px;
-    height: 30px;
+    width: 40px; /* Aumenté el tamaño de la imagen */
+    height: 40px; /* Aumenté el tamaño de la imagen */
 }
 
 .card-content {
@@ -87,7 +87,7 @@ h2 {
 
 button {
     font-size: 0.625rem; /* Usando unidades relativas */
-    padding: 4px 6px;
+    padding: 6px 8px; /* Aumenté el padding del botón */
 }
 
 .card.bbva { background-color: #0074cc; color: white; }
