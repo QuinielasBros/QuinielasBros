@@ -40,7 +40,7 @@ function copiarTexto(texto) {
 
 function obtenerClaseBanco(banco) {
     if (banco.includes("BBVA")) return "bbva";
-    if (banco.includes("BANCOPPEL")) return "bancoppel";
+    if (banco.includes("BANCOPPEL")) return "coppel";
     if (banco.includes("HSBC")) return "hsbc";
     if (banco.includes("OXXO")) return "oxxo";
     return "";

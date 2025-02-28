@@ -52,6 +52,6 @@ button {
 
 /* Colores personalizados para cada banco */
 .card.bbva { background-color: #0074cc; }
-.card.bancoppel { background-color: #ffcc00; color: black; }
+.card.coppel { background-color: #ffcc00; color: black; }
 .card.hsbc { background-color: #d32f2f; }
 .card.oxxo { background-color: #f37021; }
