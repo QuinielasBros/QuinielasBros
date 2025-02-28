@@ -26,9 +26,8 @@ body {
 
 /* Texto central */
 .titulo1 {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    text-transform: uppercase;
     flex: 1; /* Para que ocupe el espacio central */
     text-align: center;
 }
