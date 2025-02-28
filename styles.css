@@ -1,81 +1,126 @@
+/* Estilo general */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    text-align: center;
     margin: 0;
     padding: 20px;
+    text-align: center;
 }
 
 .container {
-    max-width: 600px;
+    max-width: 90%;
     background: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin: auto;
 }
-.titulo1 {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-   
+
+/* Título con imágenes a los lados */
+.titulo-con-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
 }
+
+/* Texto central */
+.titulo1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    flex: 1; /* Para que ocupe el espacio central */
+    text-align: center;
+}
+
+/* Imágenes del logo */
+.imagen {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* Subtítulos */
 .titulo2 {
-    font-family: Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
     color: #d32f2f;
+    margin: 10px 0;
 }
 
 .titulo3 {
-    font-family: Arial, sans-serif;
     font-size: 13px;
     font-weight: bold;
     color: #181717;
-}
-.imagen {
-    width: 20px;
-    height: 20px;
-    margin-left: 20px;
+    text-align: center;
+    margin: 15px 0 5px;
 }
 
-
+/* Tarjetas de colores (bancos) */
 .card {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
     color: white;
+    width: 100%; /* Que ocupen todo el ancho disponible */
+    box-sizing: border-box;
 }
 
+/* Imagen dentro de la tarjeta */
 .card img {
-    width: 50px;
-    height: 30px;
+    width: 40px;
+    height: 25px;
     object-fit: contain;
     background-color: white;
-    padding: 5px;
+    padding: 3px;
     border-radius: 5px;
 }
 
+/* Contenido texto de la tarjeta */
 .card-content {
     flex: 1;
     text-align: left;
     margin-left: 10px;
 }
 
+/* Botón dentro de tarjeta */
 button {
     background: white;
     color: black;
     border: none;
-    padding: 5px 10px;
+    padding: 5px 8px;
     cursor: pointer;
     font-weight: bold;
     border-radius: 5px;
+    font-size: 12px;
 }
 
-/* Colores personalizados para cada banco */
+/* Colores personalizados */
 .card.bbva { background-color: #0074cc; }
 .card.coppel { background-color: #ffcc00; color: black; }
 .card.hsbc { background-color: #d32f2f; }
 .card.oxxo { background-color: #f37021; }
+
+/* Responsivo: adaptar tarjetas a celular */
+@media (max-width: 480px) {
+    .card {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        padding: 8px;
+    }
+
+    .card img {
+        width: 30px;
+        height: 20px;
+    }
+
+    button {
+        margin-top: 5px;
+        width: 100%;
+        text-align: center;
+    }
+}
