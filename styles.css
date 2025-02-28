@@ -18,7 +18,8 @@
 
 .banco-logo {
     height: 40px;
-    margin-right: 10px;
+    width: 40px;
+    margin-right: 5px;
 }
 
 .imagen {
@@ -26,6 +27,20 @@
     width: 70px;
 }
 
+.titulo1 {
+   font-size: 20px;
+   font-weight: bold;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.titulo2 {
+    font-size: 18px;
+    color: rgb(255, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ .titulo3 {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
 
 .info {
     flex-grow: 1;
@@ -38,17 +53,20 @@
 .titular {
     font-style: italic;
     margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .numero {
     font-weight: bold;
     margin: 5px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .boton-copiar {
-    background: gold;
+    background: rgba(255, 217, 0, 0.664);
     border: 2px solid black;
     padding: 5px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
