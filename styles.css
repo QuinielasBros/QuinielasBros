@@ -67,7 +67,6 @@ body {
     width: 100%; /* Que ocupen todo el ancho disponible */
     height: 170px;
     box-sizing: border-box;
-    overflow: hidden; /* Evita que el texto se desborde */
 }
 
 /* Imagen dentro de la tarjeta */
@@ -85,9 +84,6 @@ body {
     flex: 1;
     text-align: left;
     margin-left: 10px;
-    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-    overflow: hidden; /* Oculta el texto que se desborda */
-    text-overflow: ellipsis; /* Agrega "..." si el texto es demasiado largo */
 }
 
 /* Botón dentro de tarjeta */
