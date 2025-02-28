@@ -116,6 +116,7 @@ button {
     .card img {
         width: 40px;
         height: 40px;
+        align-self: center;
     }
 
     .card-content {
@@ -132,13 +133,13 @@ button {
     }
 
     .card-content p {
-        font-size: 12px;
+        font-size: 14px;
         margin: 0;
     }
 
     button {
         font-size: 12px;
         padding: 5px;
-        align-self: flex-start;
+        align-self: center;
     }
 }
