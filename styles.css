@@ -3,10 +3,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     text-align: center;
+    height: 100vh; /* Usamos el 100% de la altura de la pantalla */
+    overflow: hidden; /* Evita el scroll */
 }
 
+/* Contenedor principal */
 .container {
     max-width: 90%;
     background: white;
@@ -14,6 +17,8 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin: auto;
+    height: 100%; /* Asegura que el contenedor no exceda la altura del body */
+    overflow: hidden; /* Evita el scroll dentro del contenedor */
 }
 
 /* Título con imágenes a los lados */
@@ -48,7 +53,7 @@ body {
 }
 
 .titulo3 {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
     color: #181717;
     text-align: center;
