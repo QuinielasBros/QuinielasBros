@@ -36,12 +36,14 @@ function crearCard(item) {
     card.classList.add("card", claseBanco);
 
     card.innerHTML = `
-        <img src="${item.imagen}" alt="${item.banco}">
-        <div class="card-content">
-            <p><strong>${item.numero}</strong></p>
-            <p>${item.titular}</p>
+        <div class="card-layout">
+            <img class="banco-logo" src="${item.imagen}" alt="${item.banco}">
+            <div class="info">
+                <p class="titular">${item.titular}</p>
+                <p class="numero">${item.numero}</p>
+            </div>
+            <button class="boton-copiar" onclick="copiarTexto('${item.numero}')">COPIAR</button>
         </div>
-        <button onclick="copiarTexto('${item.numero}')">Copiar</button>
     `;
 
     return card;
