@@ -38,7 +38,6 @@ function crearCard(item) {
     card.innerHTML = `
         <img src="${item.imagen}" alt="${item.banco}">
         <div class="card-content">
-            <h4>${item.banco}</h4>
             <p><strong>${item.numero}</strong></p>
             <p>${item.titular}</p>
         </div>
