@@ -29,11 +29,9 @@
 }
 
 .titulo1 {
-margin-top: -50px;
    font-size: 20px;
    font-weight: bold;
    font-family: Verdana, Geneva, Tahoma, sans-serif;
-   align: center;
 }
 .titulo2 {
     font-size: 18px;
@@ -66,14 +64,14 @@ margin-top: -50px;
 }
 
 .boton-copiar {
-    background: linear-gradient(to bottom, #f7e29c, #e6c200); /* Efecto dorado */
+    background: linear-gradient(to bottom, #f7e29c, #e6c200);
     border: 2px solid #8c7300;
     color: #000;
     font-weight: bold;
     font-size: 14px;
-    padding: 5px 20px;
+    padding: 8px 20px;
     cursor: pointer;
-    border-radius: 20px; /* Bordes redondeados */
+    border-radius: 20px;
     text-transform: uppercase;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     transition: all 0.3s ease;
@@ -88,5 +86,26 @@ margin-top: -50px;
 .boton-copiar:active {
     transform: translateY(1px); /* Efecto al hacer clic */
     box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* HEADER ESTILO */
+.header {
+    background: #202020;/* Gris claro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.header-logo {
+    height: 65px; /* Tamaño del logo en el header */
 }
 

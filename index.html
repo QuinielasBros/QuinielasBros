@@ -3,25 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Métodos de Pago</title>
+    <title>Métodos de Pago - Quinielas Bros</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Estilo Personalizado -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-        <div class="titulo-con-imagen">
-            <span class="titulo1">METODOS DE PAGO</span>
-            <img class="imagen" src="img/logoprincipal.png" alt="Logo derecha">
+<body class="bg-light">
+
+    <!-- HEADER con Bootstrap y personalizado -->
+    <header class="bg-primary text-white py-3 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="header-titulo">Quinielas Bros</h1>
+            <img class="header-logo" src="img/logoprincipal.png" alt="Logo Principal">
         </div>
-        <h2 class="titulo2">¡¡En concepto favor de poner su nombre!!</h2>
+    </header>
 
-            <span class="titulo3">TRANSFERENCIAS</span>
-            <div id="transferencias"></div>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container py-4">
+        <!-- Título Principal -->
+        <div class="text-center mb-4">
+            <h2 class="fw-bold text-uppercase">Métodos de Pago</h2>
+            <p class="text-danger fw-bold">¡¡En concepto favor de poner su nombre!!</p>
+        </div>
 
-            <span class="titulo3">DEPÓSITOS EN OXXO</span>
-            <div id="oxxo"></div>
-        
-    </div>
+        <!-- Transferencias -->
+        <section class="mb-4">
+            <h4 class="fw-bold">Transferencias</h4>
+            <div id="transferencias" class="bg-white p-3 rounded border shadow-sm">
+                <!-- Aquí se insertan dinámicamente desde script.js -->
+            </div>
+        </section>
 
+        <!-- Depósitos en OXXO -->
+        <section class="mb-4">
+            <h4 class="fw-bold">Depósitos en OXXO</h4>
+            <div id="oxxo" class="bg-white p-3 rounded border shadow-sm">
+                <!-- Aquí se insertan dinámicamente desde script.js -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Tu script personalizado -->
     <script src="script.js"></script>
 </body>
 </html>
