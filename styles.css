@@ -60,19 +60,20 @@ body {
     font-weight: bold;
  }
  .titulo3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 5px 15px;
-    display: inline-block;
-    background: linear-gradient(to right, #013D81, #007bff); /* Degradado de azul a celeste */
-    color: white; /* Texto blanco */
-    border-radius: 10px;
+    background: linear-gradient(to right, #007bff, #00d2ff);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
     margin-bottom: 10px;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Le da un poco de sombra al texto */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
  }
+
+
+
 
 .info {
     flex-grow: 1;
@@ -94,61 +95,34 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Estilo del botón con clases Bootstrap y personalizado */
 .boton-copiar {
-    background: transparent; /* Fondo transparente, usando el estilo outline */
-    border: 2px solid #28a745; /* Borde verde (similar al 'success' de Bootstrap) */
-    color: #28a745; /* Texto en color verde */
+    background: transparent;
+    border: 2px solid #28a745;
+    color: #28a745;
     font-weight: bold;
-    font-size: 14px;
-    padding: 10px 20px;
-    border-radius: 20px;
+    font-size: 12px; /* Más pequeño */
+    padding: 5px 12px; /* Menos espacio interno */
+    border-radius: 15px; /* Bordes redondeados pero más discretos */
     text-transform: uppercase;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    line-height: 1.2;
 }
 
-/* Efecto hover para hacer el botón más interactivo */
+/* Efecto hover */
 .boton-copiar:hover {
-    background-color: #28a745; /* Cambia el fondo a verde */
-    color: white; /* El texto se pone blanco */
-    transform: translateY(-2px); /* Efecto de elevación */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Efecto de sombra más fuerte */
+    background-color: #28a745;
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-/* Efecto al hacer clic */
+/* Efecto click */
 .boton-copiar:active {
-    transform: translateY(1px); /* El botón baja al hacer clic */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera */
+    transform: translateY(1px);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
-/* Efecto ripple de MDB */
-.boton-copiar:focus {
-    box-shadow: 0 0 0 0.2rem rgba(40,167,69,.5); /* Efecto de foco (cuando se hace click) */
-}
-
-/* Clase extra de Bootstrap para btn-outline-success */
-.boton-copiar.mdb-ripple {
-    position: relative;
-    overflow: hidden;
-}
-
-/* Crear el efecto ripple */
-.boton-copiar.mdb-ripple::after {
-    content: "";
-    position: absolute;
-    background: rgba(40, 167, 69, 0.4);
-    border-radius: 50%;
-    transform: scale(0);
-    animation: ripple-effect 0.6s linear;
-}
-
-@keyframes ripple-effect {
-    to {
-        transform: scale(4);
-        opacity: 0;
-    }
-}
 
 /* HEADER ESTILO */
 .header {
