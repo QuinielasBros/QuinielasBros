@@ -63,16 +63,15 @@ body {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    background: linear-gradient(to right, #007bff, #00d2ff);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    width: 100%;
+    padding: 5px 15px;
+    display: inline-block;
+    background: linear-gradient(to right,#013D81, rgba(0, 123, 255, 0.8)); /* Degradado de azul */
+    color: white; /* Texto blanco */
+    border-radius: 10px;
     margin-bottom: 10px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Le da un poco de sombra al texto */
  }
-
-
 
 
 .info {
@@ -95,6 +94,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Estilo del botón con clases Bootstrap y personalizado */
 .boton-copiar {
     background: transparent;
     border: 2px solid #28a745;
@@ -106,7 +106,6 @@ body {
     text-transform: uppercase;
     transition: all 0.3s ease;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    line-height: 1.2;
 }
 
 /* Efecto hover */
@@ -123,6 +122,33 @@ body {
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
+/* Efecto ripple de MDB */
+.boton-copiar:focus {
+    box-shadow: 0 0 0 0.2rem rgba(40,167,69,.5); /* Efecto de foco (cuando se hace click) */
+}
+
+/* Clase extra de Bootstrap para btn-outline-success */
+.boton-copiar.mdb-ripple {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Crear el efecto ripple */
+.boton-copiar.mdb-ripple::after {
+    content: "";
+    position: absolute;
+    background: rgba(40, 167, 69, 0.4);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple-effect 0.6s linear;
+}
+
+@keyframes ripple-effect {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
 
 /* HEADER ESTILO */
 .header {
