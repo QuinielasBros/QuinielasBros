@@ -65,6 +65,14 @@ body {
     font-weight: bold;
  }
 
+ .titulo4 {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+ }
+
+
 .info {
     flex-grow: 1;
     display: flex;
