@@ -1,0 +1,52 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    background-color: #013D81; /* Azul institucional */
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Tarjetas de métodos de pago */
+#transferencias,
+#oxxo {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+}
+
+/* Botón Copiar (estilo que ya tienes, solo ajustado) */
+.boton-copiar {
+    background: linear-gradient(to bottom, #f7e29c, #e6c200);
+    border: 2px solid #8c7300;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.boton-copiar:hover {
+    background: linear-gradient(to bottom, #ffefba, #f5d300);
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+}
+
+.boton-copiar:active {
+    transform: translateY(1px);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Títulos */
+h2, h4 {
+    font-family: 'Verdana', sans-serif;
+    text-transform: uppercase;
+}
